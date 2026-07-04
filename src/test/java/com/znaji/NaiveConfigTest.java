@@ -3,6 +3,7 @@ package com.znaji;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
@@ -130,17 +131,17 @@ class NaiveConfigTest {
     }
 
     @Test
-    @DisplayName("get method throws IllegalArgumentException when key is null")
+    @DisplayName("get method throws NullPointerException when key is null")
     void testGetWithNullKey() {
         NaiveConfig config = new NaiveConfig();
-        assertThrows(IllegalArgumentException.class, () -> config.get(null));
+        assertThrows(NullPointerException.class, () -> config.get(null));
     }
 
     @Test
-    @DisplayName("contains method throws IllegalArgumentException when key is null")
+    @DisplayName("contains method throws NullPointerException when key is null")
     void testContainsWithNullKey() {
         NaiveConfig config = new NaiveConfig();
-        assertThrows(IllegalArgumentException.class, () -> config.contains(null));
+        assertThrows(NullPointerException.class, () -> config.contains(null));
     }
 
     @Test
@@ -152,4 +153,40 @@ class NaiveConfigTest {
         assertEquals("value2", config.get("key").orElseThrow());
     }
 
+    @Test
+    @DisplayName("constructor rejects blank key")
+    void constructorRejectsBlankKey() {
+        Map<String, String> initialProperties = Map.of("   ", "value");
+        assertThrows(IllegalArgumentException.class, () -> new NaiveConfig(initialProperties));
+    }
+
+    @Test
+    @DisplayName("constructor rejects null key")
+    void constructorRejectsNullKey() {
+        Map<String, String> initialProperties = new HashMap<>();
+        initialProperties.put(null, "value");
+        assertThrows(NullPointerException.class, () -> new NaiveConfig(initialProperties));
+    }
+
+    @Test
+    @DisplayName("constructor rejects null value")
+    void constructorRejectsNullValue() {
+        Map<String, String> initialProperties = new HashMap<>();
+        initialProperties.put("key", null);
+        assertThrows(NullPointerException.class, () -> new NaiveConfig(initialProperties));
+    }
+
+    @Test
+    @DisplayName("get method rejects blank key")
+    void getRejectsBlankKey() {
+        NaiveConfig config = new NaiveConfig();
+        assertThrows(IllegalArgumentException.class, () -> config.get("   "));
+    }
+
+    @Test
+    @DisplayName("contains method rejects blank key")
+    void containsRejectsBlankKey() {
+        NaiveConfig config = new NaiveConfig();
+        assertThrows(IllegalArgumentException.class, () -> config.contains("   "));
+    }
 }
