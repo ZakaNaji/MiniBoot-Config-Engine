@@ -1,5 +1,6 @@
 package com.znaji;
 
+import com.znaji.miniboot.NaiveConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

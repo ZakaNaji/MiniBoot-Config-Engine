@@ -1,4 +1,4 @@
-package com.znaji;
+package com.znaji.miniboot;
 
 import java.util.*;
 
