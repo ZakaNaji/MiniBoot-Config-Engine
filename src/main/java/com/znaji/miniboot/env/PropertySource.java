@@ -11,5 +11,4 @@ public interface PropertySource {
 
     boolean contains(String key);
 
-    Map<String, String> asMap();
 }

@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 
-public final class MapPropertySource implements PropertySource {
+public final class MapPropertySource implements EnumerablePropertySource {
 
     private final String name;
     private final Map<String, String> properties;
