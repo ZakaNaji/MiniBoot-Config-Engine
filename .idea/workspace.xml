@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1efe1e50-e1d4-43e2-9bbb-5195c82d7dd0" name="Changes" comment="feat: phase 3 - PropertySources handle ordering of the sources">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/znaji/miniboot/env/EnumerablePropertySource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/znaji/miniboot/env/PropertySourcesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/znaji/miniboot/env/MapPropertySource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/znaji/miniboot/env/MapPropertySource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/znaji/miniboot/env/PropertySource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/znaji/miniboot/env/PropertySource.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/projects/Design Patterns/MiniBoot-Config-Engine" value="3G2JQYbdep9Tfhl42y3yhok1nfN" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3G2JQYbdep9Tfhl42y3yhok1nfN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "JUnit.MapPropertySourceTest.asMapReturnsUnmodifiableCopy.executor": "Run",
+    "JUnit.MapPropertySourceTest.constructorCopiesInputMap.executor": "Run",
+    "JUnit.MapPropertySourceTest.constructorThrowsForBlankName.executor": "Run",
+    "JUnit.MapPropertySourceTest.constructorThrowsForBlankPropertyKey.executor": "Run",
+    "JUnit.MapPropertySourceTest.constructorThrowsForNullName.executor": "Run",
+    "JUnit.MapPropertySourceTest.constructorThrowsForNullPropertiesMap.executor": "Run",
+    "JUnit.MapPropertySourceTest.constructorThrowsForNullPropertyKey.executor": "Run",
+    "JUnit.MapPropertySourceTest.constructorThrowsForNullPropertyValue.executor": "Run",
+    "JUnit.MapPropertySourceTest.executor": "Run",
+    "JUnit.MapPropertySourceTest.exposesName.executor": "Run",
+    "JUnit.MapPropertySourceTest.getMethodThrowsForBlankKey.executor": "Run",
+    "JUnit.MapPropertySourceTest.getMethodThrowsForNullKey.executor": "Run",
+    "JUnit.NaiveConfigTest (1).executor": "Run",
+    "JUnit.NaiveConfigTest,constructorRejectsBlankKey and 4 more.executor": "Run",
+    "JUnit.NaiveConfigTest.constructorCopiesInputMap.executor": "Run",
+    "JUnit.NaiveConfigTest.constructorRejectsNullKey.executor": "Run",
+    "JUnit.NaiveConfigTest.executor": "Run",
+    "JUnit.NaiveConfigTest.returnsValueWhenKeyExists.executor": "Run",
+    "JUnit.NaiveConfigTest.testContainsWithNullKey.executor": "Run",
+    "JUnit.PropertySourcesTest.executor": "Run",
+    "JUnit.PropertySourcesTest.testAddFirst.executor": "Run",
+    "JUnit.PropertySourcesTest.testAddLast.executor": "Run",
+    "JUnit.PropertySourcesTest.testAsListDoesNotAllowExternalMutation.executor": "Run",
+    "JUnit.PropertySourcesTest.testAsListReturnsSourcesInPriorityOrder.executor": "Run",
+    "JUnit.PropertySourcesTest.testContainsReturnsFalseWhenNoSourceContainsKey.executor": "Run",
+    "JUnit.PropertySourcesTest.testContainsReturnsTrueWhenAnySourceContainsKey.executor": "Run",
+    "JUnit.PropertySourcesTest.testGetFallsBackToLowerPrioritySource.executor": "Run",
+    "JUnit.PropertySourcesTest.testGetReturnsEmptyWhenNoSourceContainsKey.executor": "Run",
+    "JUnit.PropertySourcesTest.testGetReturnsValueFromFirstMatchingSource.executor": "Run",
+    "JUnit.PropertySourcesTest.testRejectsDuplicateSourceNamesInAddFirst.executor": "Run",
+    "JUnit.PropertySourcesTest.testSizeReturnsNumberOfSources.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.znaji.miniboot.env" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.znaji.miniboot.env" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.znaji.miniboot.env" />
+      <recent name="com.znaji.miniboot" />
+      <recent name="com.znaji" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PropertySourcesTest">
+    <configuration name="PropertySourcesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniBoot-Config-Engine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.znaji.miniboot.env.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.znaji.miniboot.env" />
+      <option name="MAIN_CLASS_NAME" value="com.znaji.miniboot.env.PropertySourcesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertySourcesTest.testAsListDoesNotAllowExternalMutation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniBoot-Config-Engine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.znaji.miniboot.env.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.znaji.miniboot.env" />
+      <option name="MAIN_CLASS_NAME" value="com.znaji.miniboot.env.PropertySourcesTest" />
+      <option name="METHOD_NAME" value="testAsListDoesNotAllowExternalMutation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertySourcesTest.testAsListReturnsSourcesInPriorityOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniBoot-Config-Engine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.znaji.miniboot.env.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.znaji.miniboot.env" />
+      <option name="MAIN_CLASS_NAME" value="com.znaji.miniboot.env.PropertySourcesTest" />
+      <option name="METHOD_NAME" value="testAsListReturnsSourcesInPriorityOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertySourcesTest.testRejectsDuplicateSourceNamesInAddFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniBoot-Config-Engine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.znaji.miniboot.env.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.znaji.miniboot.env" />
+      <option name="MAIN_CLASS_NAME" value="com.znaji.miniboot.env.PropertySourcesTest" />
+      <option name="METHOD_NAME" value="testRejectsDuplicateSourceNamesInAddFirst" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertySourcesTest.testSizeReturnsNumberOfSources" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MiniBoot-Config-Engine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.znaji.miniboot.env.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.znaji.miniboot.env" />
+      <option name="MAIN_CLASS_NAME" value="com.znaji.miniboot.env.PropertySourcesTest" />
+      <option name="METHOD_NAME" value="testSizeReturnsNumberOfSources" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PropertySourcesTest" />
+        <item itemvalue="JUnit.PropertySourcesTest.testSizeReturnsNumberOfSources" />
+        <item itemvalue="JUnit.PropertySourcesTest.testRejectsDuplicateSourceNamesInAddFirst" />
+        <item itemvalue="JUnit.PropertySourcesTest.testAsListDoesNotAllowExternalMutation" />
+        <item itemvalue="JUnit.PropertySourcesTest.testAsListReturnsSourcesInPriorityOrder" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1efe1e50-e1d4-43e2-9bbb-5195c82d7dd0" name="Changes" comment="" />
+      <created>1783163717723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783163717723</updated>
+      <workItem from="1783163719040" duration="7132000" />
+      <workItem from="1783249900043" duration="7436000" />
+    </task>
+    <task id="LOCAL-00001" summary="init project">
+      <option name="closed" value="true" />
+      <created>1783164304003</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783164304003</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Naive Config class - based on a internal hashMap, internal map isn't exposed to the external code.">
+      <option name="closed" value="true" />
+      <created>1783168371124</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783168371124</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: Naive Config class - refine the impl and add more tests">
+      <option name="closed" value="true" />
+      <created>1783169341271</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783169341271</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: Naive Config class - file/package structure">
+      <option name="closed" value="true" />
+      <created>1783169495037</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783169495037</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: Naive Config class - file/package structure">
+      <option name="closed" value="true" />
+      <created>1783169659416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783169659416</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: phase 2 - PropertySource Abstraction (first concreate impl is a MapPropertySource)">
+      <option name="closed" value="true" />
+      <created>1783251558136</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783251558136</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: phase 2 - PropertySource Abstraction tighten impl and add unit tests">
+      <option name="closed" value="true" />
+      <created>1783253169812</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783253169812</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: phase 3 - PropertySources handle ordering of the sources">
+      <option name="closed" value="true" />
+      <created>1783258790036</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783258790036</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+    <MESSAGE value="feat: Naive Config class - based on a internal hashMap, internal map isn't exposed to the external code." />
+    <MESSAGE value="fix: Naive Config class - refine the impl and add more tests" />
+    <MESSAGE value="fix: Naive Config class - file/package structure" />
+    <MESSAGE value="fix: phase 2 - PropertySource Abstraction (first concreate impl is a MapPropertySource)" />
+    <MESSAGE value="feat: phase 2 - PropertySource Abstraction tighten impl and add unit tests" />
+    <MESSAGE value="feat: phase 3 - PropertySources handle ordering of the sources" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: phase 3 - PropertySources handle ordering of the sources" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

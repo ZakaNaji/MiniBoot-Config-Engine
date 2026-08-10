@@ -17,6 +17,8 @@ public final class PropertySources {
     }
 
     public Optional<String> get(String key) {
+        validateKey(key);
+
         for (PropertySource source : sources.values()) {
             Optional<String> value = source.get(key);
             if (value.isPresent()) {
@@ -27,6 +29,8 @@ public final class PropertySources {
     }
 
     public boolean contains(String key) {
+        validateKey(key);
+
         for (PropertySource source : sources.values()) {
             if (source.contains(key)) {
                 return true;
@@ -48,8 +52,20 @@ public final class PropertySources {
             throw new IllegalArgumentException("PropertySource cannot be null");
         }
 
-        if (sources.containsKey(source.name())) {
-            throw new IllegalArgumentException("PropertySource with name '" + source.name() + "' already exists");
+        String sourceName = source.name();
+
+        if (sourceName == null || sourceName.isBlank()) {
+            throw new IllegalArgumentException("PropertySource name must not be null or blank");
+        }
+
+        if (sources.containsKey(sourceName)) {
+            throw new IllegalArgumentException("PropertySource with name '" + sourceName + "' already exists");
+        }
+    }
+
+    private static void validateKey(String key) {
+        if (key == null || key.isBlank()) {
+            throw new IllegalArgumentException("Key must not be null or blank");
         }
     }
 }

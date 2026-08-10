@@ -89,6 +89,43 @@ class PropertySourcesTest {
     }
 
     @Test
+    @DisplayName("get throws IllegalArgumentException for null or blank key")
+    void testGetValidateTheKey() {
+        assertThrows(IllegalArgumentException.class, () -> propertySources.get(null));
+        assertThrows(IllegalArgumentException.class, () -> propertySources.get(""));
+        assertThrows(IllegalArgumentException.class, () -> propertySources.get("   "));
+    }
+
+    @Test
+    @DisplayName("contains throws IllegalArgumentException for null or blank key")
+    void testContainsValidateTheKey() {
+        assertThrows(IllegalArgumentException.class, () -> propertySources.contains(null));
+        assertThrows(IllegalArgumentException.class, () -> propertySources.contains(""));
+        assertThrows(IllegalArgumentException.class, () -> propertySources.contains("   "));
+    }
+
+    @Test
+    @DisplayName("addFirst rejects duplicate source names")
+    void testAddFirstRejectsDuplicateSourceNames() {
+        PropertySource source1 = new MapPropertySource("source1", Map.of("key1", "value1"));
+        propertySources.addFirst(source1);
+
+        PropertySource duplicateSource = new MapPropertySource("source1", Map.of("key2", "value2"));
+        assertThrows(IllegalArgumentException.class, () -> propertySources.addFirst(duplicateSource));
+    }
+
+    @Test
+    @DisplayName("addLast rejects duplicate source names")
+    void testAddLastRejectsDuplicateSourceNames() {
+        PropertySource source1 = new MapPropertySource("source1", Map.of("key1", "value1"));
+        propertySources.addLast(source1);
+
+        PropertySource duplicateSource = new MapPropertySource("source1", Map.of("key2", "value2"));
+        assertThrows(IllegalArgumentException.class, () -> propertySources.addLast(duplicateSource));
+    }
+
+
+    @Test
     @DisplayName("contains returns true when any source contains key")
     void testContainsReturnsTrueWhenAnySourceContainsKey() {
         PropertySource source1 = new MapPropertySource("source1", Map.of("key1", "value1"));
